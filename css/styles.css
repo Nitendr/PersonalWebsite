@@ -1,0 +1,709 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+
+}
+
+
+body {
+  background-image: url(../Images/grad2.png);
+  background-attachment: fixed;
+   background-size: cover;
+  
+
+
+}
+
+ 
+nav { 
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0 30px;
+  display: flex;
+  height: 80px;
+  list-style: none;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-items {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 30px 50px ;
+}
+
+.burger  {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+}
+
+.social-media {
+  display: flex;
+  width: auto;
+  margin-left: auto;
+  align-items: center;
+  
+}
+
+.social-media a {
+  color: rgb(20, 20, 20);
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav-image  {
+  font-size: 1.1rem;
+  padding: 40px 50px;
+}
+
+.top-container {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  padding: 100px;
+}
+
+.content {
+  margin-top: 60px;
+  display: flex;
+}
+
+.myself {
+  width: 50%;
+}
+
+.hello {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  z-index: -1;
+  opacity: 0.2;
+  font-size: 450px;
+  font-weight: 600;
+}
+
+.pic {
+  text-align: center;
+  position: relative;
+  width: 50%;
+  justify-content: center;
+}
+.profile-pic {
+  position: relative;
+  right: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 75px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.myself {
+  font-family: "satisfy";
+  width: 50%;
+  left: 80px;
+  font-weight: 600;
+  position: relative;
+  top: 20%;
+  color: rgb(22, 22, 22);
+}
+
+.top-container h1 {
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+.top-container p  {
+  width: 80%;
+  line-height: 70px;
+  font-size: 3.5rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.top-container h2 {
+  font-family: "Montserrat";
+}
+
+.top-container h3 {
+  font-family: "Montserrat";
+  padding-top: 30px;
+  font-weight: 500;
+  width: 75%;
+  font-size: 18px;
+}
+
+
+/* Skills */
+
+.skills {
+  background-color: transparent;
+  margin:  50px 180px;
+  text-align: center;
+  font-family: "satisfy";
+  font-size: 30px;
+  font-weight: 500;
+  
+}
+
+.skills h1 {
+  margin-bottom: 50px;
+  padding-top: 20px ;
+  font-size: 70px;
+  font-weight: 500;
+  /* text-decoration: underline; */
+  text-underline-position: above;
+
+
+}
+
+.skills p {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  color: rgb(22, 22, 22);
+}
+
+.skill-content h2 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 20px;
+}
+
+.dev {
+  flex: 0 0 10%;
+  height: 35%;
+  width: 40%;
+}
+
+.skill-row {
+  padding: 50px;
+  display: flex;
+}
+
+.skill-content {
+  /* letter-spacing: 1px; */
+  text-align: left;
+  width: 80%;
+  
+}
+
+.content-1 {
+  padding-left: 120px;
+}
+
+.content-2 {
+  width: 60%;
+  padding-right: 50px;
+}
+
+.dev-2 {
+  /* flex: 0 0 10%; */
+  flex-direction: row;
+  height: 200px;
+  width: 60%;
+}
+
+/* Portfolios */
+
+#portfolio {
+  margin: 150px 100px;
+  font-family: "satisfy";
+ text-align: center;
+ align-items: center;
+}
+
+#portfolio h1 {
+  padding-bottom: 20px;
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.images {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 100%;
+  
+}
+
+
+.port-img {
+  position: relative;
+  width: 40%;
+  margin: 30px 0;
+  /* height: 15%; */
+  border-radius: 20px;
+  box-shadow: 0px 5px 30px rgba(34, 33, 33, 0.2);
+}
+
+.images {
+  justify-content: space-around;
+   
+}
+
+
+
+
+
+
+
+
+
+
+/* Experience */
+
+.experience {
+  
+  align-items: center;
+  text-align: center;
+
+  min-height: 100vh;
+  /* backdrop-filter: blur(10px); */
+  padding: 20px;
+  font-family: "Montserrat";
+  font-weight: 800;
+}
+.experience h1 {
+  font-size: 70px;
+  font-family: "satisfy";
+  font-weight: 500;
+}
+.wrapper{
+  margin:  100px 100px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapper .card{
+  background: rgb(255, 255, 255);
+  width: 280px;
+  height: 380px; 
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(34, 33, 33, 0.4);
+}
+
+.circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+
+
+.box,
+ span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.box{
+  height: 100%;
+  width: 100%;
+  /* background: #fff; */
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+ .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+ span,
+ .text{
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span{
+  font-size: 38px;
+  font-family: sans-serif;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.img{
+  height: 70px;
+  width: 70px;
+}
+.img-4 {
+  width: 100px;
+  height: 70px;
+}
+
+
+/* About */
+#about {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+#about .about-heading {
+  font-size: 70px;
+  font-family: "satisfy";
+  text-align: center;
+  padding: 20px;
+}
+
+.reading {
+  height: 100%;
+  width: 100%;
+}
+
+.book-reading {
+  font-size: 36px;
+  font-family: "satisfy";
+  text-align: left;
+  padding: 0 0 40px 100px;
+}
+.books-name{
+  width: 100wv;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.book {
+  
+  border-radius: 15px;
+  height: 230px;
+  width: 150px;
+  background-color: rgb(241, 241, 241);
+  margin: 30px 50px;
+  box-shadow: 0px 10px 15px rgba(34, 33, 33, 0.4);
+}
+
+.book  img {
+  border-radius: 5px;
+  width: 95%;
+  height: 97%;
+  /* object-fit: fill; */
+  /* background-image: url(/Images/rich.jpg);
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+.book .intelligent img {
+  transform: rotate(20deg)
+}
+
+
+#contact {
+  text-align: center;
+  padding: 80px 30px;
+}
+
+#contact h1 {
+  font-family: "satisfy";
+  font-weight: 700;
+  font-size: 52px;
+  padding-bottom: 20px;
+}
+
+#contact h2 {
+  padding-bottom: 20px;
+  font-family: "montserrat";
+  font-size: 26px;
+}
+
+#contact p {
+  color: rgb(43, 42, 42);
+  font-family: "montserrat";
+  font-size: 22px;
+  width: 60%;
+  margin: auto;
+}
+
+#contact .btn {
+  margin: 50px auto;
+  padding: 20px 30px;
+  background: rgb(21, 190, 106);
+  border-radius: 15px;
+  font-family: "montserrat";
+  width: 30%;
+  font-size: 22px;
+  color: white;
+  box-shadow: 0px 10px 15px rgba(34, 33, 33, 0.4);
+}
+
+h1 {
+  text-shadow: 0px 5px 5px rgba(34, 33, 33, 0.4);
+
+}
+
+@keyframes navLinkFade{
+  from {
+    opacity: 0;
+    transform: translatex(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line-1 {
+ transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-2{
+ opacity: 0;
+}
+
+.toggle .line-3{
+ transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+/* Media Query */
+
+@media(max-width: 753px){
+  .wrapper{
+    flex-direction: column;
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper{
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+  .top-container {
+    padding: 0;
+  }
+  nav {
+    padding: 0px;
+    justify-content: space-evenly;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+
+  .top-container .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top-container .pic .profile-pic {
+    height: 250px;
+    width: 250px;
+    right: 35px;
+  }
+
+  .top-container .pic {
+    width: 100%;
+    top: 30px;
+  }
+
+  .top-container .myself h1 {
+     font-size: 52px;
+  }
+  .myself {
+    padding: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .top-container .myself p {
+    font-size: 32px;
+    padding-top: 10px;
+    line-height: 1cm;
+    width: 100%;
+  }
+  .top-container .myself h3 {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  
+  .hello{
+    display: none;
+  }
+
+  /* Middle Container */
+
+  .skills {
+    margin: 50px 20px  0;
+  }
+  .middle-container .skills h1 {
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .dev, .dev-2 {
+    width: 70% ;
+  }
+
+  .skill-content {
+    width: 90%;
+    padding: 50px 0 30px;
+    text-align: center;
+  }
+
+  .skill-content p {
+    width: 100%;
+  }
+
+  .skill-row {
+    padding: 50px 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  .row-2 {
+    flex-direction: column-reverse;
+  }
+
+  /* Portfilio */
+  #portfolio {
+    margin: 50px 10px 20px;
+  }
+
+  #portfolio h1  {
+    font-size: 52px;
+  }
+
+  .images {
+    top: 100px;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+
+  .port-img {
+    width: 95%;
+    margin-top: 45px ;
+  }
+
+  /* Experience */
+  .experience h1 {
+    padding-bottom: 50px;
+  }
+
+  .book {
+    margin: 20px;
+  }
+  .books-name{
+    align-items: center;
+    justify-content: center;
+  }
+  .book-reading {
+    text-align: center;
+    font-size: 32px;
+    padding-left: 0;
+  }
+  #contact .btn{
+    width: 80%;
+  }
+  #contact h2{
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+  }
+  #contact p {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .nav-items {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    height: 90vh;
+    flex-direction: column;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+
+  }
+  .nav-link {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    padding: 5px;
+    margin-left: 50px;
+    border: 3px solid rgb(230, 227, 227);
+    border-radius: 8px;
+    cursor: pointer;
+    
+  }
+
+  .burger div {
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  .nav-active {
+    backdrop-filter: blur(20px);
+    transform: translateX(0%);
+  }
+  .social-media{
+    width: 50%;
+
+  }
+  .nav-image {
+    height: 100%;
+    width: 50%;
+    padding: 0;
+    position: relative;
+    top: 30px;
+    
+  }
+
+}
+
+.blur {
+  backdrop-filter: blur(20px);
+}
+
+

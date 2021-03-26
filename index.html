@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nitendra</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link rel="icon" href="Images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@200;500&family=Satisfy:wght@400;500;600&display=swap" rel="stylesheet">
+    <script  defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+  </head>
+  <body>
+
+
+
+    <div class="gradient">
+
+      <!-- navbar -->
+      
+      <nav>
+        <div class="nav-items">
+          <li class="nav-link"><a href="#portfolio">Work</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
+        </div>
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <div class="social-media">
+          <a class="nav-image" href="https://twitter.com/Singh_ji__"><i class="fab fa-twitter   "></i></a>
+          <a class="nav-image" href="https://instagram.com/S_i_n_g_h_.ji_"><i class="fab fa-instagram   "></i></a>
+          <a class="nav-image" href="https://dribbble.com/Nitendr"><i class="fab fa-dribbble  "></i></a>
+        </div>
+  
+      </nav>
+
+      <!-- Introduction -->
+
+
+      <div class="top-container">
+        <h2 class="hello">Hello.</h2>
+        <div class="content">
+          <div class="myself">
+            
+            <h1 >I'm Nitendra. </h1>
+            <p>A Web Designer & A Programmer. <p>
+            <h3 >I'm a web designer / developer based in Delhi, India. I have a passion for web design and love to create for web and mobile devices.</h3>
+
+          </div>
+          <div class="pic">
+            <img class="profile-pic"src="Images/Nitendra Singh.jpg" alt="My profile Picture" >
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <!-- skills -->
+
+
+    <div class="middle-container">
+         <div class="skills">
+        <h1>What I can do.</h1>
+        <div class="skill-row" >
+          
+            <img class="dev" src="Images/design.svg" alt="" >
+          
+          <div class="skill-content  content-1"> 
+            <h2>Design what you want.</h2>
+            <p>I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</p>
+          </div> 
+        </div>
+        <div class="skill-row  row-2" >
+          <div class="skill-content content-2">
+            <h2>Develop what you need.</h2>
+            <p>I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+           </div>
+          
+            <img class=" dev-2" src="Images/develop.svg" alt="" >
+          
+        </div>
+      </div>
+    </div>  
+
+      <!-- portfolio -->
+
+      <div id="portfolio">
+        <h1>Designs</h1>
+        <div class="ports">
+          <div class="port-1">
+           <div class="images">
+             <img class="port-img" src="Images/Payzee.png" alt="">
+             <img class="port-img" src="Images/DE.png" alt="">
+            
+             <img class="port-img" src="Images/nmp.png" alt="">
+            <img class="port-img" src="Images/spark.png" alt="">
+          
+            <img class="port-img" src="Images/haveit.png" alt="">
+            <img class="port-img" src="Images/GoExpress.png" alt="">
+          
+            <img class="port-img" src="Images/BS.png" alt="">
+            <img class="port-img" src="Images/DSA.png" alt="">
+          </div>
+           
+          </div>
+        </div>
+        
+        
+
+      </div>
+
+      <!-- Experience In Languages -->
+       <div class="experience"> 
+         <h1>Experience</h1>
+         <div class="wrapper">
+          <div class="card">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div><img class="img" src="Images/html.png" alt=""></div>
+          </div>
+          <div class="card css">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div ><img class="img" src="Images/css.png" alt=""></div>
+          </div>
+          <div class="card js">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div><img class="img" src="Images/JS.png" alt=""></div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="card react">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div><img class="img-4" src="Images/React.png" alt=""></div>
+          </div>
+        </div>
+    
+        <script>
+          let options = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.80,
+            fill: {gradient: ['#a445b2', '#fa4299']}
+          }
+          $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+          function(event, progress, stepValue){
+            $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+          });
+          $(".css .bar").circleProgress({
+            value: 0.70
+          });
+          $(".js .bar").circleProgress({
+            value: 0.70
+          });
+          $(".react .bar").circleProgress({
+            value: 0.60
+          });
+        </script>
+    
+        
+       </div>
+      
+      
+       <!-- About me -->
+       <section id="about">
+         <h1 class="about-heading">About</h1>
+         <div class="reading">
+           <h2 class="book-reading">Book Reading</h2>
+          <div class="books-name">
+            <div class="book rich"><a href="./Images/rich.jpg"><img src="./Images/rich.jpg" alt=""></a></div>
+            <div class="book intelligent"><a href="./Images/intelligent.jpg"><img src="./Images/intelligent.jpg" alt=""></a></div>
+            <div class="book grow"><a href="./Images/grow.jpg"><img src="./Images/grow.jpg" alt=""></a></div>
+            <div class="book subtle"><a href="./Images/subtle.jpg"><img src="./Images/subtle.jpg" alt=""></a></div>
+          </div>
+          <div class="books-name">
+            <div class="book relative"><a href="./Images/relativity.jpg"><img src="./Images/relativity.jpg" alt=""></a></div>
+            <div class="book string"><a href="./Images/string.jpg"><img src="./Images/string.jpg" alt=""></a></div>
+            <div class="book mechanics"><a href="./Images/quantum.jpg"><img src="./Images/quantum.jpg" alt=""></a></div>
+          </div>
+          </div>
+
+         
+
+       </section>
+
+
+
+      <!-- contact me -->
+
+
+      <div id="contact">
+        <h1>I can help.</h1>
+        <h2>I’m currently available for freelance work.</h2>
+        <p>If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+        <a href="mailto:nitendrasingh496@gmail.com"><h3 class="btn">Message Me</h3></a>
+      </div>
+    
+
+      <!-- Footer -->
+
+
+    <!-- <div class="bottom-container">
+      <br>
+      <a class="footer-link" href="https://dribbble.com/Nitendr"><i class="fab fa-dribbble   "></i></a>
+      <a class="footer-link" href="https://twitter.com/Singh_ji__"><i class="fab fa-twitter   "></i></a>
+      <a class="footer-link" href="https://www.instagram.com/singh.ji__/"><i class="fab fa-instagram   "></i></a>
+      <br>
+      <br>
+      <h3 class="copyright">© 2020 Nitendra Singh. All Rights Reserved.</h3>
+      <br>
+    </div> -->
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".port-img "), {
+      max: 8,
+      speed: 1000
+      });
+    </script>
+     <script>
+      VanillaTilt.init(document.querySelectorAll(".card "), {
+      max: 8,
+      speed: 1000
+      });
+    </script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
