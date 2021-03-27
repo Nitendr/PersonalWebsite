@@ -507,6 +507,8 @@ h1 {
 }
 @media(max-width: 505px){
   .wrapper{
+    margin: 0;
+    padding: 0 70px;
     flex-direction: column;
     max-width: 500px;
   }
